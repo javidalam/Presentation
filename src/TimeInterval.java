@@ -1,6 +1,7 @@
 public class TimeInterval {
-    public int start;
-    public int end;
+    public static int start;
+    public static int end;
+
 
     public boolean overlapsWith(TimeInterval interval) {
         if (this.start < interval.end && this.start > interval.start) {
@@ -13,4 +14,5 @@ public class TimeInterval {
             return false;
         }
     }
+
 }
