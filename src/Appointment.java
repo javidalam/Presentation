@@ -4,6 +4,11 @@ public class Appointment
     {
         return getTime().overlapsWith(other.getTime());
     }
-    
+    public TimeInterval getTime() {
+        return null;
+    }
+    public boolean overlapsWith(TimeInterval interval) {
+        return false;
+    }
 
 }
