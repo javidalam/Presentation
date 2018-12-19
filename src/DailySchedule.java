@@ -34,4 +34,4 @@ public class DailySchedule {
         return apptList.add(appt);
 
     }
-    }
+}
