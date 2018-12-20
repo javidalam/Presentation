@@ -22,9 +22,12 @@ public class DailySchedule {
         }
     }
     public boolean addAppt(Appointment appt, boolean emergency) {
-        if (emergency) {
+        if (emergency)
+        {
             clearConflicts(appt);
-        } else {
+        }
+        else
+            {
             for (int i = 0; i < apptList.size(); i++) {
                 if (appt.conflictsWith((Appointment) apptList.get(i))) {
                     return false;
@@ -34,13 +37,16 @@ public class DailySchedule {
         return apptList.add(appt);
 
     }
-
-    /*public void getSchedule()
+    public void getSchedule()
     {
-        for (:apptList)
+
         {
-            System.out.println(apptList.get(i));
+            System.out.println("Number of Appointment(s)"+ apptList.size());
         }
+
     }
-*/
+
+
+
+
 }
