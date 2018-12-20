@@ -9,9 +9,12 @@ public class Runner {
         Appointment TwoB=new Appointment(two);
 
         System.out.println(OneA.conflictsWith(TwoB));
-        DailySchedule Calender = new DailySchedule();
 
-        System.out.print(Calender.addAppt(OneA,true));
-     
+        DailySchedule Calender = new DailySchedule();
+        Calender.addAppt(OneA,true);
+        Calender.addAppt(TwoB,true);
+        Calender.clearConflicts(TwoB);
+       // Calender.getSchedule();
+
     }
 }

@@ -34,4 +34,13 @@ public class DailySchedule {
         return apptList.add(appt);
 
     }
+
+    /*public void getSchedule()
+    {
+        for (:apptList)
+        {
+            System.out.println(apptList.get(i));
+        }
+    }
+*/
 }
